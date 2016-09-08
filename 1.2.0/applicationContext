@@ -1,0 +1,48 @@
+   mcs {
+ 		mcsNumIterations = "64000"
+ 		}
+ , hDayVolatility {
+ 		hDayValue = "10"
+ 		}  
+ , valueAtRisk {
+		writePercentilesList = ["95","96","97","98","99"]
+		}
+ , instrumentModel { 
+ 		modelsLocation = "/project/1.2.0/models/h-models/models/", 
+ 		modelSchemasLocation = "/project/1.2.0/models/h-models/schemas/" , 
+ 		predictionColumn = "prediction"
+ 		} 
+ , portfolioHolding {
+ 		fileLocation = "/project/1.2.0/portfolios/", 
+ 		portfolioFileType = ".csv" , 
+ 		keyColumn = "valueDate", 
+ 		valueColumn = "value", 
+ 		instrumentColumn = "dsCode"
+ 		} 
+ , riskFactor {
+ 		fileLocation = "/project/1.2.0/factors/", 
+ 		factorsFileName = "factors.clean.csv" 
+ 		}
+ , instrumentPrice {
+		fileLocation = "/project/1.2.0/prices/", 
+		priceFileType = ".csv", 
+		keyColumn = "valueDate", 
+		valueColumn = "closePrice"
+		}
+, predictions	{
+		logDBUrl = <<url information here>>
+		logDBDriver = << driver here>>,
+		dbUser = << username here >>,
+		dbPassword = << password here >>,
+		sigma95="1.645",
+		sigma99="2.33"
+		}
+, springFramework {
+		applicationContextFileName = "/project/1.2.0/configuration/application-context.xml", 
+		predictorBeanName = "valuePredictor",
+		generatorBeanName = "instrumentModelGenerator",
+		persistorBeanName = "simplePredictionPersistor",
+		covariancePredictorBeanName = "covarianceValuePredictor",
+		observationGeneratorBeanName = "observationValueGenerator",
+		instrumentModelGeneratorBeanName = "instrumentModelGenerator"
+		}
