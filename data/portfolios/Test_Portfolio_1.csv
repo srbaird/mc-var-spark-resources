@@ -1,0 +1,11 @@
+portfolioCode,id,dsCode,instrumentTypeId,value,valueDate
+Test_Portfolio_1,3,WIKI_CMC,1,110000,"2015-01-01 00:00:00"
+Test_Portfolio_1,4,WIKI_AAL,1,250000,"2015-01-01 00:00:00"
+Test_Portfolio_1,5,WIKI_BLK,1,175000,"2015-01-01 00:00:00"
+Test_Portfolio_1,6,WIKI_EGN,1,88000,"2015-01-01 00:00:00"
+Test_Portfolio_1,7,WIKI_FDP,1,50000,"2015-01-01 00:00:00"
+Test_Portfolio_1,9,WIKI_HL,1,150000,"2015-01-01 00:00:00"
+Test_Portfolio_1,10,WIKI_JPM,1,100000,"2015-01-01 00:00:00"
+Test_Portfolio_1,12,WIKI_MOD,1,50000,"2015-01-01 00:00:00"
+Test_Portfolio_1,13,WIKI_PHX,1,50000,"2015-01-01 00:00:00"
+Test_Portfolio_1,14,WIKI_SSD,1,40000,"2015-01-01 00:00:00"
